@@ -1,0 +1,9 @@
+1-Explica brevemente el concepto de "Mobile First" en diseño web y cómo aplicarías sus principios al desarrollar una interfaz
+EL concepto mobile First se base en dar una prioridad al desarrollo
+orientado al desarrollo mobile tanto como en formato app 
+como desarollo web movile, usualmente prefiero desarrollar por separado
+el desarrollo web de computador como el desarrollo movile,
+pero lo mejor que se puede hacer es desarrollar primero la movile
+y usando css como herramienta colocar condciones para que esta
+se ajuste lo mas posible para un desarrolo web de computador,
+asi siguiendo una linea tematica separando el movil del computador
