@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="miBoton">FECHA Y HORA</button>
+    <script>
+        function formatoFecha(fecha, formato) {
+            const map = {
+            dd: fecha.getDate(),
+            mm: fecha.getMonth() + 1,
+            yy: fecha.getFullYear().toString().slice(-2),
+            yyyy: fecha.getFullYear()
+        }
+
+        return formato.replace(/dd|mm|yy|yyy/gi, matched => map[matched])
+        }
+        document.getElementById("miBoton").addEventListener("click", function() {
+            const ahora = new Date();
+            const fechaFormateada = formatoFecha(ahora, "dd/mm/yyyy");
+            const hora = ahora.toLocaleTimeString();
+            document.getElementById("fecha").innerText = `Fecha: ${fechaFormateada} - Hora: ${hora}`;
+        });
+        
+    </script>
+    <p id="fecha"></p>
+
+</body>
+</html>
