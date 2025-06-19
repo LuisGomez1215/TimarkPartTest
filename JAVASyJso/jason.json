@@ -1,8 +1,0 @@
-  {
-    "productos": [
-      { "id": 1, "nombre": "Laptop", "precio": 1200, "categoria": "electronica" },
-      { "id": 2, "nombre": "Mouse", "precio": 25, "categoria": "accesorios" },
-      { "id": 3, "nombre": "Teclado", "precio": 75, "categoria": "electronica" },
-      { "id": 4, "nombre": "Monitor", "precio": 300, "categoria": "electronica" }
-    ]
-  }

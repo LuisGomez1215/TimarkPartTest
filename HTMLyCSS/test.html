@@ -46,7 +46,9 @@
     </main>
 <!--Informacion complementaria que puede ayudar a enganchar al cliente-->
     <footer>
+        <div>
            <button id="miBoton" class="btn btn-primary btn-dark me-md-2" type="button">Hora actual</button>
+            <p id="fecha"></p> 
     <script>
         /*funcion para sacar la fecha del sistema */
         function formatoFecha(fecha, formato) {
@@ -66,6 +68,44 @@
             document.getElementById("fecha").innerText = `Fecha: ${fechaFormateada} - Hora: ${hora}`;
         });
     </script>
+    </div>
+
+    <!--json+java scrip para traer objetos-->
+    <div>
+    <button onclick="filtrarProductos()">Mostrar Productos</button>
+    <!--llamamos a la funcion on click para que llame a la "db" y solo nos traiga informacion
+    especifica que le estamos pidiendo -->
+
+        <ul id="resultado"></ul>
+
+  <script>
+    const jsonData = `{
+      "productos": [
+        { "id": 1, "nombre": "Laptop", "precio": 1200, "categoria": "electronica" },
+        { "id": 2, "nombre": "Mouse", "precio": 25, "categoria": "accesorios" },
+        { "id": 3, "nombre": "Teclado", "precio": 75, "categoria": "electronica" },
+        { "id": 4, "nombre": "Monitor", "precio": 300, "categoria": "electronica" }
+      ]
+    }`;
+
+    function filtrarProductos() {
+        const db=JSON.parse(jsonData)
+        const productosdb = db.productos
+        /*podemos cambiar el valor o annadir algun otro parametro para obtener mas resultados*/
+            .filter(producto=>producto.precio>100)
+            .map(producto=> `${producto.nombre} - $${producto.precio}`)
+        /*impresion en consola y en pag*/
+        console.log("Productos filtrados:", productosdb);
+        const lista= document.getElementById("resultado")
+        lista.innerHTML= "";
+        productosdb.forEach(nombre =>{
+            const li =document.createElement("li");
+            li.textContent=nombre;
+            lista.appendChild(li);
+        });
+    }
+  </script>
+  </div>
     </footer>
 </body>
 </html>

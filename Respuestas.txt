@@ -7,3 +7,5 @@ pero lo mejor que se puede hacer es desarrollar primero la movile
 y usando css como herramienta colocar condciones para que esta
 se ajuste lo mas posible para un desarrolo web de computador,
 asi siguiendo una linea tematica separando el movil del computador
+
+2-o	¿Qué ventajas ofrece JSON sobre XML para el intercambio de datos en aplicaciones web modernas?
