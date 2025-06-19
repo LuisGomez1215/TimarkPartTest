@@ -9,3 +9,24 @@ se ajuste lo mas posible para un desarrolo web de computador,
 asi siguiendo una linea tematica separando el movil del computador
 
 2-o	¿Qué ventajas ofrece JSON sobre XML para el intercambio de datos en aplicaciones web modernas?
+la principal ventaja que tiene json con resppectoa xml es que es la mas optima o por lo menos
+la menos pesada para correr en un navegador web, gracias a que esta tiene una sintaxis mas sencilla
+y un menor tamano de los tipos de datos resulta muchisimo mas comoda para manejar la
+clase de datos que usamos en este tipo de proyectos
+
+3-
+
+4a-¿Cuál es la diferencia principal entre git merge y git rebase y en qué escenarios usarías cada uno?
+la principal difenrencia se encuentra en la limpieza que otorga rebase en comparacion
+a los extra que pueden llegar con merge(como puede ser un commit), usualmente si es un grupo
+grande de trabajo usaria mergue, pero si es un grupo muy bien structurado de maximo 4-3
+personas usarua rebase y avisaria a mis companneros
+
+4b-Describe el proceso general que seguirías para resolver este conflicto de fusión
+para solucionar este tipo de conflictos a la hora de subir un archivo yo
+me comunicaria con mi companero de manera inmedia a consultar el funcionamiento
+del codigo, posterior le expondria como funcina el mio para ver si hay una manera
+de fucionarlos, caso contrario intentare llegar una conclusion que nos satisfaga a los 
+2, preferiblemente eligiendo el codigo que sea mas optimo para lo que nos estan pidiendo
+y en guardar el otro en un repositorio por si se da el caso que se agregue algo
+a futuro que permita que el no elegido sea mas optimo que el actual
